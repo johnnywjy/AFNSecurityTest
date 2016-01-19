@@ -14,6 +14,9 @@
 		8CF559E71C4E285F00331E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF559E51C4E285F00331E01 /* Main.storyboard */; };
 		8CF559E91C4E285F00331E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF559E81C4E285F00331E01 /* Assets.xcassets */; };
 		8CF559EC1C4E285F00331E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF559EA1C4E285F00331E01 /* LaunchScreen.storyboard */; };
+		8CF559F61C4E2E0700331E01 /* *.huihui.cn.cer in Resources */ = {isa = PBXBuildFile; fileRef = 8CF559F31C4E2A6800331E01 /* *.huihui.cn.cer */; };
+		8CF559F71C4E2E0700331E01 /* GeoTrust Global CA.cer in Resources */ = {isa = PBXBuildFile; fileRef = 8CF559F41C4E2A6800331E01 /* GeoTrust Global CA.cer */; };
+		8CF559F81C4E2E0700331E01 /* GeoTrust SSL CA - G3.cer in Resources */ = {isa = PBXBuildFile; fileRef = 8CF559F51C4E2A6800331E01 /* GeoTrust SSL CA - G3.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF559F61C4E2E0700331E01 /* *.huihui.cn.cer in Resources */,
+				8CF559F71C4E2E0700331E01 /* GeoTrust Global CA.cer in Resources */,
+				8CF559F81C4E2E0700331E01 /* GeoTrust SSL CA - G3.cer in Resources */,
 				8CF559EC1C4E285F00331E01 /* LaunchScreen.storyboard in Resources */,
 				8CF559E91C4E285F00331E01 /* Assets.xcassets in Resources */,
 				8CF559E71C4E285F00331E01 /* Main.storyboard in Resources */,
