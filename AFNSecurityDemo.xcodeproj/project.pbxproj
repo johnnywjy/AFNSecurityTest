@@ -29,6 +29,9 @@
 		8CF559E81C4E285F00331E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF559EB1C4E285F00331E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF559ED1C4E285F00331E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF559F31C4E2A6800331E01 /* *.huihui.cn.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "*.huihui.cn.cer"; sourceTree = "<group>"; };
+		8CF559F41C4E2A6800331E01 /* GeoTrust Global CA.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeoTrust Global CA.cer"; sourceTree = "<group>"; };
+		8CF559F51C4E2A6800331E01 /* GeoTrust SSL CA - G3.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeoTrust SSL CA - G3.cer"; sourceTree = "<group>"; };
 		E1D8D26EE15687AC99A5DFF0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +101,9 @@
 		8CF559DC1C4E285F00331E01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8CF559F31C4E2A6800331E01 /* *.huihui.cn.cer */,
+				8CF559F41C4E2A6800331E01 /* GeoTrust Global CA.cer */,
+				8CF559F51C4E2A6800331E01 /* GeoTrust SSL CA - G3.cer */,
 				8CF559DD1C4E285F00331E01 /* main.m */,
 			);
 			name = "Supporting Files";
