@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking.h>
 
 @interface ViewController ()
 
@@ -16,12 +17,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self usingPublicKey];
+    [self usingCertificates];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)usingCertificates {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSSet *certificates = [AFSecurityPolicy certificatesInBundle:[NSBundle mainBundle]];
+    AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate withPinnedCertificates:certificates];
+    manager.securityPolicy = policy;
+
+    [manager GET:@"https://app.huihui.cn/app/abroad/top"
+      parameters:nil
+        progress:nil
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+             NSLog(@"AFSSLPinningModeCertificate succ");
+         }
+         failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+             NSLog(@"AFSSLPinningModeCertificate error: %@",error);
+         }];
+}
+
+- (void)usingPublicKey {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSSet *certificates = [AFSecurityPolicy certificatesInBundle:[NSBundle mainBundle]];
+    AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey withPinnedCertificates:certificates];
+    manager.securityPolicy = policy;
+
+    [manager GET:@"https://app.huihui.cn/app/abroad/top"
+      parameters:nil
+        progress:nil
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+             NSLog(@"AFSSLPinningModePublicKey succ");
+         }
+         failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+             NSLog(@"AFSSLPinningModePublicKey error: %@",error);
+         }];
 }
 
 @end
